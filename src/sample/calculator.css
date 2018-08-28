@@ -1,0 +1,29 @@
+.numbutton{
+    -fx-background-color: #DBDADB;
+    -fx-border-color: #8B8783;
+    -fx-text-fill: #000000;
+    -fx-border-width: 0.5;
+}
+
+.numbutton:hover{
+    -fx-background-color: #a6a6a6;
+}
+
+.operandbutton{
+    -fx-background-color: #F6882B;
+    -fx-border-color: #8B8783;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 0.5;
+}
+
+.operandbutton:hover{
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.number{
+    -fx-background-color: #434343;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 0.5;
+    -fx-border-color: #8B8783;
+}

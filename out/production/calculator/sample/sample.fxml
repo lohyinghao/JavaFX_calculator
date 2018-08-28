@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="calculator" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane layoutY="100.0" prefHeight="300.0" prefWidth="300.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#buttonOne" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#buttonTwo" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="2" GridPane.columnIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#buttonThree" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="3" GridPane.columnIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#buttonFive" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#buttonSix" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#buttonFour" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonSeven" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#buttonEight" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#buttonNine" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#buttonZero" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="0" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#buttonDot" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="." GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonEqual" prefHeight="75.0" prefWidth="100.0" styleClass="numbutton" stylesheets="@calculator.css" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <TextField fx:id="calculatorField" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="400.0" styleClass="number" stylesheets="@calculator.css">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </TextField>
+      <GridPane layoutX="300.0" layoutY="100.0" prefHeight="300.0" prefWidth="100.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#buttonClear" prefHeight="60.0" prefWidth="100.0" stylesheets="@calculator.css" text="AC">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="numbutton" />
+                  <String fx:value="operandbutton" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonDivide" prefHeight="60.0" prefWidth="100.0" stylesheets="@calculator.css" text="/" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="numbutton" />
+                  <String fx:value="operandbutton" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonMultiply" prefHeight="60.0" prefWidth="100.0" stylesheets="@calculator.css" text="*" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="numbutton" />
+                  <String fx:value="operandbutton" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonMinus" prefHeight="60.0" prefWidth="100.0" stylesheets="@calculator.css" text="-" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="numbutton" />
+                  <String fx:value="operandbutton" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonPlus" prefHeight="60.0" prefWidth="100.0" stylesheets="@calculator.css" text="+" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="numbutton" />
+                  <String fx:value="operandbutton" />
+               </styleClass>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</Pane>
