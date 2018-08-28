@@ -5,4 +5,4 @@ The project demostrate MVC framework and how to use JavaFX to perform interactiv
 
 <h3> Calculator GUI </h3>
 
-<img src="/Calculator.png"  width="500" height="529" />
+<img src="/Calculator_gui.png"  width="500" height="529" />
